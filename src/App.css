@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.main_height{
+  min-height: 600px;
+  background-color: rgb(219, 232, 241);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
