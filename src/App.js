@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Protected from './protectedRoute/Protected';
+import Home from './components/rcc/Layouts.js/Home';
 
 function App() {
   return (
-    <div className="App App-header">
       <BrowserRouter>
         <Routes>
-          <Route />
+          <Route path="/" element={<Protected Component={Home} />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
